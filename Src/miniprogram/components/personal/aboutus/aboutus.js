@@ -8,7 +8,7 @@ Page({
     developer_avatars:[
       "https://thirdwx.qlogo.cn/mmopen/vi_32/g4vibWFiazOIkPNbd7sbfB4icpUWlfRwUJgOF6NwleibStseSWicEZ6JEYa9DcWVg5xibVe5ichDMnPqov7GLq0lLibrCg/132",
       "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTK62gfVmfeQEdOKl1GDSHAqwoh2ntIXLT4BR0vI5icSxKJOQMuxuohBJJ40Vml0M1yF1xE4niaeLqKA/132",
-      "cloud://env-dev-4g6anmt6c45832a8.656e-env-dev-4g6anmt6c45832a8-1303853824/WechatIMG1122.png"
+      "cloud://luojia1cloud-7gbweippb2dee1e5.6c75-luojia1cloud-7gbweippb2dee1e5-1330021689/WechatIMG1122.png"
     ]
   },
 

@@ -14,18 +14,5 @@
       <text>
       </text>
     </view>
-    <!-- <view class="developer">
-      <view class="user-avatars">
-        <block wx:for="{{developer_avatars}}" wx:key="index">
-          <image src="{{developer_avatars[index]}}" class="developer-avatars" />
-        </block>
-      </view>
-      <view class="developer-info">
-        <text>复旦大学沪驴工作室</text>
-      </view>
-      <view class="developer-info">
-        <text>Copyright@Hulv Studio</text>
-      </view>
-    </view> -->
   </view>
 </view>

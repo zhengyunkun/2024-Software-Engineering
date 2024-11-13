@@ -19,7 +19,7 @@ Page({
 
     // 图片素材信息
     allBackground: new Array(9),
-    backgroundUrl: "cloud://env-dev-4g6anmt6c45832a8.656e-env-dev-4g6anmt6c45832a8-1303853824/bg/1.jpeg",
+    backgroundUrl: "cloud://luojia1cloud-7gbweippb2dee1e5.6c75-luojia1cloud-7gbweippb2dee1e5-1330021689/bg/1.jpeg",
     backgroundId: '1',
     backgroundPath: '',
     stickerUrl: '', // 请求后台的贴纸图
@@ -421,7 +421,6 @@ Page({
      // STEP1 : 上传图片集合到云端
      this.callCloudFunc(this.data.assemblies,e.detail )
     
-     /*
      var imgCounter = 0, tmpCounter = 0
      for(var i=0;i<this.data.assemblies.length;i++){
        if(this.data.assemblies[i].component_type!='image'){
@@ -460,7 +459,6 @@ Page({
          })
        }
      })
-    */
     }else{
       wx.showToast({
         title:'请输入手帐名',
@@ -482,10 +480,13 @@ Page({
         backgroundPath: this.data.backgroundPath,
       }
       
+      console.log("准备调用云函数 addEntry", data);
+
       wx.cloud.callFunction({
         name: 'addEntry',
         data: {item: data, collection: 'diary'},
        }).then(res=>{
+         console.log("云函数调用成功", res);
          wx.hideLoading() // 隐藏正在加载的提示
          wx.showToast({title:"保存成功!"})
          this.setData({isEdit:false})

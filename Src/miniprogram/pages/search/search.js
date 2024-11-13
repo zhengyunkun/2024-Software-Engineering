@@ -16,9 +16,9 @@ Page({
   
   // 获取数据 - 搜索历史以及热搜地点
   onLoad: function (options) {
-    wx.showLoading({
-      title: '加载中...',
-    })
+    // wx.showLoading({
+    //   title: '加载中...',
+    // })
     wx.cloud.database().collection('touristAttraction').orderBy('hotDegree','desc')
     .get()
     .then(res=>{

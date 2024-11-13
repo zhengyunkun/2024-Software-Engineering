@@ -10,16 +10,16 @@ Page({
       {title:"当季景点"}
     ],
     list: [],
-    hotList:null ,
+    hotList:data.hotPlaceAttr ,
     seasonList:data.onSeasonAttr,
     filepath: data.path
   },
 
   onLoad: function (options) {
     // this.setData({list: this.data.hotList})
-    wx.showLoading({
-      title: '加载中...',
-    })
+    // wx.showLoading({
+    //   title: '加载中...',
+    // })
     wx.cloud.database().collection('touristAttraction').orderBy('hotDegree','desc')
     .get()
     .then(res=>{

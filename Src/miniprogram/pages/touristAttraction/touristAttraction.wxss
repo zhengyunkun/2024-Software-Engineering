@@ -1,19 +1,17 @@
 /* pages/touristAttraction/touristAttraction.wxss */
-.wrapper{
+.wrapper {
   background-color: white;
 }
 
-.search-bar{
+.search-bar {
   width: 100%;
 }
 
 
-
-.hmly-title-left{
-  padding-left:15px;
-  float: left;
-  font-size: 37rpx;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: 800;
-  color: #333;
+.attraction-ranking,
+.attraction-comment,
+.attraction-description {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
 }

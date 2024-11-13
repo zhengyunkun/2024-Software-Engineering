@@ -9,7 +9,7 @@
         </view>
         <van-icon name="fire-o" wx:if="{{index<3}}" color="red"/>
       </view>
-      <image src="{{item.imgSrc}}"></image>
+      <image src="{{filepath + item.imgSrc}}"></image>
          <view class="hmly-content-left">
          <view class="hmly-content-title">{{item.title}}</view>
          <view class="hmly-like-text">{{item.description}}</view>
