@@ -1,0 +1,15 @@
+var subStr = function(val,len){
+  if(len==16)
+     return val.substring(0,16)
+  
+  if(val.length>len)
+     return val.substring(0,len)+"..."
+  return val
+}
+
+
+
+
+module.exports = {
+  subStr: subStr
+}

@@ -1,0 +1,87 @@
+/* components/waterfall/waterfall.wxss */
+/* 瀑布流相关 */
+.content{
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx;
+  overflow: hidden;
+}
+
+.left{
+  width: 345rpx;
+  padding-left: 5px;
+}
+
+.right{
+  width: 345rpx;
+  margin-left: 20rpx;
+  padding-right: 5px;
+}
+
+.pic{
+  border-radius: 10rpx;
+  width: 345rpx;
+}
+
+.like-img{
+  background-color: white;
+  border-radius: 5%;
+  margin-bottom: 25px;
+}
+
+.detail-content{
+  color: #C0C0CC;
+  text-align: start;
+  padding-top:0px;
+  padding-left:5px;
+  margin-top: 0px;
+  font-weight: 500;
+}
+
+.avatar{
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
+}
+
+.tail-text{
+  text-align: end;
+  color: grey;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.user-info{
+  text-align: start;
+  padding-left:5px;
+}
+
+.tags{
+  overflow: hidden;
+  width: 90%;
+  background-color: white;
+  margin-bottom: 5px;
+}
+
+.tag{
+  float: left;
+  font-size: 12px;
+  color: rgb(161, 160, 160);
+  
+  border: 1pt solid #1989fa;
+  border-radius: 16px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-left: 3px;
+  margin-bottom: 5px;
+}
+
+
+.fav{
+  margin-left:10px;
+  margin-right:10px;
+  padding-bottom: 5px;
+  text-align: justify;
+}

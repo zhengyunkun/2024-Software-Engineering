@@ -1,0 +1,12 @@
+<view class='journal-container' bindtap='onJournalTap'>
+  <image class='journal-preview' src='{{ previewImageUrl }}' />
+  <view class='shade'>
+    <view class='journal-info'>
+      <text class='title'>{{ title }}</text>
+      <text class='date'>{{ date }}</text>
+    </view>
+    <view class='settings-container' catchtap='onSettingsTap'>
+      <image class='settings' src='/images/assets/settings-journal.png'></image>
+    </view>
+  </view>
+</view>

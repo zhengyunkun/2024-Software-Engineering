@@ -1,0 +1,50 @@
+/* components/friendPost/friendPost.wxss */
+.one-post{
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+  text-align: center;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+
+.user-info{
+  padding-top: 0px;
+  padding-left: 15px;
+  padding-bottom: 0px;
+  vertical-align: center;
+  text-align: start;
+}
+.post-info{
+  padding-top: 0px;
+  padding-left: 15px;
+  padding-bottom: 0px;
+  vertical-align: center;
+  text-align: start;
+}
+
+.user-avatar{
+  width: 30px;
+  height: 30px;
+  padding-left: 10px;
+  padding-bottom: 0px;
+}
+
+.user-nickname{
+  vertical-align: center;
+  padding-bottom: 0px;
+}
+
+.post-content{
+  text-align: start;
+}
+
+.tags{
+  text-align: start;
+}
+
+.post-location{
+  vertical-align: center;
+  text-align: center;
+}

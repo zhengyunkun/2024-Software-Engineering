@@ -1,0 +1,45 @@
+<!---->
+
+<!--景区图片的轮播图-->
+<view class="hmly-swiper-container">
+  <swiper class="hmly-swiper" autoplay="true" circular="true"
+    interval="3000" easing-function="easeOutCubic" current="{{swiperCurren}}" bindchange="swiperChange">
+    <swiper-item class="hmly-swiper-item" wx:for="{{attractionObj.imgSrc}}" wx:key="index">
+      <image src="{{filepath+item}}" mode="aspectFit"></image>
+    </swiper-item>
+  </swiper>
+  <view class="hmly-dots">
+    <block wx:for="{{attractionObj.imgSrc.length}}" wx:key="index">
+      <view class="hmly-dots-item{{index==swiperCurren?'hmly-dot-active':''}}"></view>
+    </block>
+  </view>
+</view>
+
+<!--景区信息展示-->
+<van-cell  title="{{attractionObj.title}}" label="{{attractionObj.geoInfo.location}}" bindtap="goMap">
+  <van-icon slot="right-icon" name="location-o" style="font-size:24px" class="custom-icon" />
+</van-cell>
+
+  
+<van-collapse value="{{activeNames}}" bind:change="onchange">
+   <van-collapse-item title="景区介绍" name="1">
+      {{attractionObj.description}}
+   </van-collapse-item>
+   <!--显示开放时间-->
+   <van-collapse-item title="开放时间" name="2">
+       {{attractionObj.opentime}}
+   </van-collapse-item>
+  </van-collapse>
+
+
+<!--显示评分-->
+<van-cell title="评分" >
+  {{attractionObj.score}}
+  <!--增加了`readonly`字段 用户不能修改评分-->
+  <van-rate readonly value="{{attractionObj.score}}"></van-rate>
+</van-cell>
+
+
+
+<!--显示票价-->
+<van-cell title="票价" value="{{attractionObj.price}}" />

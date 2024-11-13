@@ -1,0 +1,31 @@
+<!--miniprogram/components/personal/aboutus/aboutus.wxml-->
+<view class="main">
+  <image class="avatar" src="../../../images/logo.png" />
+  <view class="wrap">
+    <view class="text-content">
+      <text>
+        "珞珈行迹"的目标是为武汉市内的游客和本地居民提供一站式的旅行信息、个性化手帐记录以及交友服务。现代都市人，尤其是生活在快节奏中的武汉市民或来访的游客，在进行旅行时，往往需要整合多个信息来源，如景区介绍、攻略、地图等。许多用户还希望将自己的旅行经历通过手帐、图片等形式记录下来，同时与朋友或其他旅友分享交流。而市场上大多数旅行类应用较为单一，无法满足从信息获取到个性化记录、再到社交分享的一站式需求。此外，寻找志同道合的驴友也是户外旅行中的一个痛点，缺乏方便有效的筛选和招募方式。
+      </text>
+      <text>
+        我们承诺:
+        1."珞珈行迹"不会保存您的任何隐私数据，也不会分享或使用您的隐私数据.
+        2.您在使用本小程序发布的数据，都将在腾讯云端安全、可靠、持久存储。"珞珈行迹"小程序不会在其他任何平台公开或分享您的这些数据.
+      </text>
+      <text>
+      </text>
+    </view>
+    <!-- <view class="developer">
+      <view class="user-avatars">
+        <block wx:for="{{developer_avatars}}" wx:key="index">
+          <image src="{{developer_avatars[index]}}" class="developer-avatars" />
+        </block>
+      </view>
+      <view class="developer-info">
+        <text>复旦大学沪驴工作室</text>
+      </view>
+      <view class="developer-info">
+        <text>Copyright@Hulv Studio</text>
+      </view>
+    </view> -->
+  </view>
+</view>

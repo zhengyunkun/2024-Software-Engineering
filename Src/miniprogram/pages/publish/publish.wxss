@@ -1,0 +1,153 @@
+/* miniprogram/pages/publish/publish.wxss */
+.publish-page {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.input-head {
+  margin-top: 25rpx;
+  width: 98%;
+  margin: 1%;
+  height: 60rpx;
+  font-size: large;
+  font-style: italic;
+  font-weight: 300;
+}
+.input-text {
+  margin-top: 25rpx;
+  width: 98%;
+
+  margin: 1%;
+  height: 400rpx;
+  
+}
+
+.imageRootAll {
+  margin-top: 30rpx;
+  margin-bottom: 10rpx;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.imgItem {
+  margin: 6rpx;
+  position: relative;
+  width: 176rpx;
+  height: 176rpx;
+  background: gainsboro;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.closeImg {
+  position: absolute;
+  right: 0px;
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.photo {
+  width: 50%;
+  height: 50%;
+  margin: 25%;
+}
+.tab-bar {
+  background-color: #f4f4f4;
+  position: relative;
+  justify-content: space-around;
+  height: 105rpx;
+  display: flex;
+  flex-direction: row;
+  z-index: 19990125;
+  display: -webkit-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+
+.selector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10rpx 40rpx;
+}
+
+.tab-bar-icon {
+  position:absolute;
+  top: 11rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.tab-bar-title {
+  position: absolute;
+  top: 73rpx;
+  font-size: 21rpx;
+  color: #727177;
+}
+.tag-type {
+  display: inline-block;
+  margin: 18rpx 42rpx 10rpx;
+  font-size: 33rpx;
+  justify-content: center;
+}
+.tag-scroll-view {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  color: #727177;
+  height: 80px;
+}
+
+.tag-rich-tab-bar {
+  background-color: #f4f4f4;
+  position: relative;
+  bottom: 0;
+  justify-content: center; 
+  height: 410rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 19980119;
+}
+
+.tag-type-scroll-view {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  color: #808085;
+  justify-content: center;
+  align-items: center;
+  width:300rpx;
+}
+.Tag{
+  display: flex;
+  justify-content: center;  /*水平*/
+  align-items: center; /*垂直*/
+}
+@keyframes rich-tab-bar-open {
+  from {
+    bottom: -305rpx;
+  }
+
+  to {
+    bottom: 0;
+  }
+}
+@keyframes rich-tab-bar-close {
+  from {
+    bottom: 0;
+  }
+
+  to {
+    bottom: -305rpx;
+  }
+}

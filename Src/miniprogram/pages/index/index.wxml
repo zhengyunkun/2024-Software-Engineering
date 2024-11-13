@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+   
+    <button wx:if="{{!hasUserInfo }}" bindtap="getUserProfile"> 授权使用 </button>
+    <text wx:if="{{!hasUserInfo }}" style="padding: 5%;">本项目是提供武汉市旅游出行功能的小程序，由华中科技大学学生开发、目前仅在一定范围内使用。因此需要您授权登陆来享有全部的功能体验。</text>
+
+    <!--主页-->
+    <block wx:else>
+    <view wx:if="{{active==0}}" id="main">
+      <scroll-view scroll-y bindscrolltolower="scrollToLowermain" style="height:800px">
+        <main id="mainpage" />
+      </scroll-view>
+    </view>
+    <!--发现页-->
+    <view wx:elif="{{active==1}}" id="find">
+      <scroll-view scroll-y bindscrolltolower="scrollToLower" style="height:800px">
+        <findPage id="findPage" />
+      </scroll-view>
+    </view>
+    <!--消息页-->
+    <view wx:elif="{{active==2}}"><messagePage /></view>
+   <!--个人中心-->
+   <view wx:elif="{{active==3}}"><personal /></view>
+
+  </block>
+  </view>
+  
+  <van-tabbar active="{{active}}" bind:change="onChange">
+    <van-tabbar-item icon="home-o" >主页</van-tabbar-item>
+    <van-tabbar-item icon="search" >发现</van-tabbar-item>
+    <van-tabbar-item icon="chat-o"  dot="{{newMessagein}}" >消息</van-tabbar-item>
+    <van-tabbar-item icon="user-o" >我的</van-tabbar-item>
+  </van-tabbar>
+</view>
+
+<!--返回顶部-->
+<view wx:if="{{backTopValue}}" class="back-top" catchtap="backTop">
+  <van-icon name="arrow-up" />
+</view>
+

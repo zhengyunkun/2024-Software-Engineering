@@ -1,0 +1,20 @@
+<!-- 个人中心 -->
+
+<view class="b1 float" bindtap="goFootmark">
+    <view class="head float">
+       <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class="name float">
+      <open-data type="userNickName"></open-data>
+    </view>
+   
+</view>
+
+
+<van-cell title="我的手帐" icon="notes-o" is-link bindtap="goDiary"/>
+<van-cell title="我的帖子" icon="friends-o" is-link bindtap="goPost"/>
+<van-cell title="我的攻略" icon="photo-o" is-link bindtap="goGuide"/>
+
+<view class="white-space" style="height:50px"/>
+<van-cell title="关于珞珈行迹" icon="setting-o" is-link bindtap="goAboutus"/>
+<van-cell title="使用反馈" icon="records" is-link bindtap="goFeedback"/>
