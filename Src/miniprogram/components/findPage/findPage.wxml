@@ -1,5 +1,5 @@
 <!--发现页-->
-<van-tabs active="{{ active }}" bind:change="onChange" color="#1989fa"> 
+<van-tabs active="{{ active }}" bind:change="onChange" color="#3d5a80"> 
   <van-tab title="景点·攻略" class="content"></van-tab>
   
   <van-tab title="寻找·驴友" class="content"></van-tab>
@@ -17,7 +17,7 @@
 
   <!--显示"没有更多数据了"-->
   <view class="center-text" wx:if="{{noMore}}">
-    <text>没有更多数据了...</text>
+    <!-- <text>没有更多数据了...</text> -->
   </view>
 </view>
 
@@ -31,7 +31,7 @@
      <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}" bind:change="onAttractionChange"/>
     </van-dropdown-menu>
 </view>
-<van-divider  customStyle="margin-left:5%;width:90%;color: #1989fa; border-color: #1989fa;">
+<van-divider  customStyle="margin-left:5%;width:90%;color: #3d5a80; border-color: #3d5a80;">
   </van-divider>
    <view  class="content2">
      <!--驴友贴内容-->

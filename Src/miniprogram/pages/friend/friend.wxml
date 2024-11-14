@@ -13,7 +13,7 @@ is-link
   show="{{show}}"
   type="range"
   bind:close="onClose"
-  bind:confirm="onConfirm" color="#1989fa"
+  bind:confirm="onConfirm" color="#3d5a80"
 />
 <view class="whitespace"></view>
 <!--性别选择-->

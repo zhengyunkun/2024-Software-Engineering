@@ -19,7 +19,7 @@ Page({
 
     // 图片素材信息
     allBackground: new Array(9),
-    backgroundUrl: "cloud://luojia1cloud-7gbweippb2dee1e5.6c75-luojia1cloud-7gbweippb2dee1e5-1330021689/bg/1.jpeg",
+    backgroundUrl: "",
     backgroundId: '1',
     backgroundPath: '',
     stickerUrl: '', // 请求后台的贴纸图
@@ -75,48 +75,48 @@ Page({
       windowBottom: (res.windowHeight - res.windowWidth * 1112 / 750 - 52.5).toString(),
       allBackground: data.bgs
     })
-    this.downloadBackgroundImage(this.data.backgroundId)
-    this.downloadStickers(this.data.currentStickerType)
+    // this.downloadBackgroundImage(this.data.backgroundId)
+    // this.downloadStickers(this.data.currentStickerType)
   },
 
   // 下载背景图
-  downloadBackgroundImage: function(backgroundId) {
-    // TODO: 正确修改背景图
-    console.log("修改背景图")
-    var that = this
-    for(var i=0;i<this.data.allBackground.length;++i){
-      if(this.data.allBackground[i].id==backgroundId){
-        var path = this.data.allBackground[i].path
+  // downloadBackgroundImage: function(backgroundId) {
+  //   // TODO: 正确修改背景图
+  //   console.log("修改背景图")
+  //   var that = this
+  //   for(var i=0;i<this.data.allBackground.length;++i){
+  //     if(this.data.allBackground[i].id==backgroundId){
+  //       var path = this.data.allBackground[i].path
 
-        wx.cloud.downloadFile({
-          fileID: this.data.allBackground[i].path,
-          success: res=>{
-            console.log(res)
-            that.setData({
-              backgroundId:backgroundId,
-              backgroundUrl: path,
-              backgroundPath: res.tempFilePath
-            })
-            console.log(that.data.backgroundUrl)
-          }
-        })
-      }
-    }
-  },
+  //       wx.cloud.downloadFile({
+  //         fileID: this.data.allBackground[i].path,
+  //         success: res=>{
+  //           console.log(res)
+  //           that.setData({
+  //             backgroundId:backgroundId,
+  //             backgroundUrl: path,
+  //             backgroundPath: res.tempFilePath
+  //           })
+  //           console.log(that.data.backgroundUrl)
+  //         }
+  //       })
+  //     }
+  //   }
+  // },
 
   // 加载贴纸
-  downloadStickers: function(type){
-    var allStickers = data.stickers;
-    var stickers = [];
-    for(var i=0;i<allStickers.length;++i){
-      if(allStickers[i].type==type){
-        stickers.push(allStickers[i]);
-      }
-    }
-    this.setData({
-      currentStickers: stickers
-    })
-  },
+  // downloadStickers: function(type){
+  //   var allStickers = data.stickers;
+  //   var stickers = [];
+  //   for(var i=0;i<allStickers.length;++i){
+  //     if(allStickers[i].type==type){
+  //       stickers.push(allStickers[i]);
+  //     }
+  //   }
+  //   this.setData({
+  //     currentStickers: stickers
+  //   })
+  // },
 
   showBackgroundRichTabBar: function() {
     this.setData({
@@ -440,11 +440,13 @@ Page({
      
      this.data.assemblies.map((item,index)=>{
        if(item.component_type=='image'){
+         console.log("Start uploading")
          wx.cloud.uploadFile({
            cloudPath: 'diary_image/'+new Date().getTime() + item.image_url.match(/\.[^.]+?$/)[0],
            filePath: item.image_url
          }).then(res=>{
            console.log(res.fileID)
+           console.log("Something Wrong")
            var tmp = item
            tmp.local_url = item.image_url
            tmp.image_url = res.fileID
@@ -457,6 +459,7 @@ Page({
              this.callCloudFunc(new_assemblies, e.detail)
            }
          })
+         console.log(cloudPath);
        }
      })
     }else{

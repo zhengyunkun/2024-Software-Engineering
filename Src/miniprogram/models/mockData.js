@@ -1,9 +1,5 @@
 var hotPlace = [
-  {place:"外滩",location:"上海市黄浦区中山东一路",description:"外滩是到上海旅游的首站，外滩建筑群是上海的名片，夜景不可错过",related:["万国建筑博览群","金融广场","游船码头"],icon:"icon-jiantouUp",color:"text-red"},
-  {place:"田子坊", location: "上海市黄浦区泰康路248弄", description:"上海滩最有味道的弄堂，时尚地标，是文艺小年轻的首选地", related: ["泰迪之家","气味图书馆","李守白艺术中心","新视野画廊"] ,icon:"icon-jiantouDown",color:"text-green"},
-  {place:"南京路步行街", location: "上海市黄浦区山东中路33号", description:"大上海繁华的商业街，名品汇聚的购物街区，这里的夜晚五光十色。", related: ["第一百货","世贸HelloKitty上海滩时光之旅","萌萌塔"],icon:"icon-jiantouUp",color:"text-red"},
-  {place:"上海城隍庙旅游区", location: "上海市黄浦区方浜中路249号", description:"古香古色如集市一般，绝不能错过夜景", related:["豫园","上海历史收藏馆","沉香阁","湖心亭茶楼"],icon:"icon-jiantouDown",color:"text-green" },
-  {place:"1933老场坊", location: "上海市虹口区溧阳路611号", description:"建筑设计简约独特，拍照打卡圣地", related:[] ,icon:"icon-jiantouUp",color:"text-red"},
+
 ]
 
 var shares = [

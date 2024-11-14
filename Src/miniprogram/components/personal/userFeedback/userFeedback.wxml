@@ -5,7 +5,7 @@
 <view>
 
 <view wx:if="{{hasHistory}}" >
-  <van-divider contentPosition="center"  customStyle="color: #1989fa; border-color: #1989fa; font-size: 18px;">
+  <van-divider contentPosition="center"  customStyle="color: #3d5a80; border-color: #3d5a80; font-size: 18px;">
      历史消息
   </van-divider>
 </view>
@@ -43,7 +43,7 @@
 
 <view class='inputRoom' style='bottom: {{inputBottom}}'>
   <input bindconfirm='sendClick' adjust-position='{{false}}' value='{{inputVal}}' confirm-type='send' bindfocus='focus' bindblur='blur' style="width: 90%;"></input>
-  <!--<van-icon size="30px" color="#1989fa" name="upgrade"  bindtap="sendClick"/>-->
+  <!--<van-icon size="30px" color="#3d5a80" name="upgrade"  bindtap="sendClick"/>-->
 </view>
 </view>
 

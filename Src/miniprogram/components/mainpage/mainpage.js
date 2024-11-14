@@ -92,18 +92,18 @@ Component({
          console.log(res)
          
          var left = that.data.leftList, right = that.data.rightList;
-         if(res.result.data.length==0){
-          that.setData({
-            noMore: true
-          })
-        }  
-         for(var i=0;i<res.result.data.length;i++){
-           if(i%2)
-             right.push(res.result.data[i])
-           else 
-             left.push(res.result.data[i])
-           that.data.guideData.push(res.result.data[i])
-         }  
+        //  if(res.result.data.length==0){
+        //   that.setData({
+        //     noMore: true
+        //   })
+        // }  
+        //  for(var i=0;i<res.result.data.length;i++){
+        //    if(i%2)
+        //      right.push(res.result.data[i])
+        //    else 
+        //      left.push(res.result.data[i])
+        //    that.data.guideData.push(res.result.data[i])
+        //  }  
          var newSkip = that.data.skip+that.data.num
          that.setData({
            guideData: that.data.guideData,

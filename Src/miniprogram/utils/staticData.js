@@ -169,7 +169,7 @@ var onSeasonAttr = [
 
 // 手帐背景图片
 var bgs = [
-  {id:"1",path: "cloud://luojia1cloud-7gbweippb2dee1e5.6c75-luojia1cloud-7gbweippb2dee1e5-1330021689/bg/1.jpeg"},
+  {id:"1",path: ""},
   {id:"2",path: "cloud://luojia1cloud-7gbweippb2dee1e5.6c75-luojia1cloud-7gbweippb2dee1e5-1330021689/bg/2.jpeg"},
   {id:"3",path:"cloud://luojia1cloud-7gbweippb2dee1e5.6c75-luojia1cloud-7gbweippb2dee1e5-1330021689/bg/3.jpeg"},
   {id:"4",path:"cloud://luojia1cloud-7gbweippb2dee1e5.6c75-luojia1cloud-7gbweippb2dee1e5-1330021689/bg/4.jpeg"},

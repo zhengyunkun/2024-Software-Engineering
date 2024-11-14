@@ -20,16 +20,16 @@ Page({
     // wx.showLoading({
     //   title: '加载中...',
     // })
-    wx.cloud.database().collection('touristAttraction').orderBy('hotDegree','desc')
-    .get()
-    .then(res=>{
-        var hotL = res.data.slice(0,9)
-        for(var i=0;i<hotL.length;i++){
-          hotL[i].imgSrc = this.data.filepath+hotL[i].imgSrc[0]
-        }
-        this.setData({hotList:hotL,})
-        wx.hideLoading()
-     })
+    // wx.cloud.database().collection('touristAttraction').orderBy('hotDegree','desc')
+    // .get()
+    // .then(res=>{
+    //     var hotL = res.data.slice(0,9)
+    //     for(var i=0;i<hotL.length;i++){
+    //       hotL[i].imgSrc = this.data.filepath+hotL[i].imgSrc[0]
+    //     }
+    //     this.setData({hotList:hotL,})
+    //     wx.hideLoading()
+    //  })
   },
 
   handleClick: function(e){

@@ -12,7 +12,7 @@ page{
   box-shadow: 4px 2px 2px #cccccc;
   height: 240rpx;
   margin-bottom: 5%;
-  background: linear-gradient(to right,  #1989fa, #87CEEB);
+  background: linear-gradient(to right,  #3d5a80, #87CEEB);
   
   border-style: 6px solid #F5F5F5;
 }

@@ -44,8 +44,8 @@ Page({
     ctx.setTextAlign('top')
 
     // 绘制背景图
-    console.log(this.data.backgroundPath)
-    ctx.drawImage(this.data.backgroundPath, 0, 0, 750, 1112)
+    // console.log(this.data.backgroundPath)
+    // ctx.drawImage(this.data.backgroundPath, 0, 0, 750, 1112)
    
     // 绘制组件
     for(var i in sortedAssemblies){
@@ -110,12 +110,13 @@ Page({
         // 保存预览图临时路径
         that.setData({previewImagePath: res.tempFilePath})
 
-        wx.showLoading({  title: '正在上传', })
-
+        // wx.showLoading({  title: '正在上传', })
+        console.log("Start Uploading and save diary");
         wx.cloud.uploadFile({
           cloudPath: 'diary_preview/'+new Date().getTime() + res.tempFilePath.match(/\.[^.]+?$/)[0],
           filePath: res.tempFilePath,
           success: res=>{
+            console.log("OK")
             console.log(res.fileID) // 预览图上传的url
             wx.cloud.callFunction({
               name: 'uploadDiaryPreviewImage',
@@ -135,7 +136,8 @@ Page({
       }
     }) 
   },2000)
-   wx.hideLoading()
+   console.log("Upload OK");
+  //  wx.hideLoading()
   },
   
   onSaveJournal: function(){

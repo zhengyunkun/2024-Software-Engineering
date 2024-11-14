@@ -4,7 +4,7 @@ page{
 }
 
 .main{
-  background-color: #1989FA;
+  background-color: #3d5a80;
   width: 100%;
   min-height: 100%;
   text-align: center;

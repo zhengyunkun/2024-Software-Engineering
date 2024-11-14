@@ -6,7 +6,7 @@
   font-size: 37rpx;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 800;
-  color: #1989fa;
+  color: #3d5a80;
 }
 
 .tagRoot {

@@ -15,7 +15,7 @@
   padding: 20rpx 0rpx;
   text-align: center;
   font-size: 40rpx;
-  color: #1989fa;
+  color: #3d5a80;
 }
 
 .hmly-content-item image{

@@ -68,7 +68,7 @@
   font-size: 12px;
   color: rgb(161, 160, 160);
   
-  border: 1pt solid #1989fa;
+  border: 1pt solid #3d5a80;
   border-radius: 16px;
   padding-left: 5px;
   padding-right: 5px;

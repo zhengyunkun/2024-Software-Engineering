@@ -50,7 +50,7 @@
     </scroll-view>
   </view>
 <!--发布-->
-<van-button color="#1989fa" bindtap="publish" block>发布攻略</van-button>
+<van-button color="#3d5a80" bindtap="publish" block>发布攻略</van-button>
 
 </view>
 
