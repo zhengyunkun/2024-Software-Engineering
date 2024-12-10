@@ -1,6 +1,6 @@
 <!--miniprogram/components/personal/aboutus/aboutus.wxml-->
 <view class="main">
-  <image class="avatar" src="../../../images/logo.png" />
+  <!-- <image class="avatar" src="../../../images/logo.png" /> -->
   <view class="wrap">
     <view class="text-content">
       <text>

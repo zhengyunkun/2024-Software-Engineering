@@ -79,45 +79,6 @@ Page({
     // this.downloadStickers(this.data.currentStickerType)
   },
 
-  // 下载背景图
-  // downloadBackgroundImage: function(backgroundId) {
-  //   // TODO: 正确修改背景图
-  //   console.log("修改背景图")
-  //   var that = this
-  //   for(var i=0;i<this.data.allBackground.length;++i){
-  //     if(this.data.allBackground[i].id==backgroundId){
-  //       var path = this.data.allBackground[i].path
-
-  //       wx.cloud.downloadFile({
-  //         fileID: this.data.allBackground[i].path,
-  //         success: res=>{
-  //           console.log(res)
-  //           that.setData({
-  //             backgroundId:backgroundId,
-  //             backgroundUrl: path,
-  //             backgroundPath: res.tempFilePath
-  //           })
-  //           console.log(that.data.backgroundUrl)
-  //         }
-  //       })
-  //     }
-  //   }
-  // },
-
-  // 加载贴纸
-  // downloadStickers: function(type){
-  //   var allStickers = data.stickers;
-  //   var stickers = [];
-  //   for(var i=0;i<allStickers.length;++i){
-  //     if(allStickers[i].type==type){
-  //       stickers.push(allStickers[i]);
-  //     }
-  //   }
-  //   this.setData({
-  //     currentStickers: stickers
-  //   })
-  // },
-
   showBackgroundRichTabBar: function() {
     this.setData({
       backgroundAnimation: 'rich-tab-bar-open',
